@@ -48,14 +48,14 @@ this is a template to genreate dapeng api service
 name [api]: bbq     # yourProjectName
 version ["0.1-SNAPSHOT"]:  # yourProjectVersion
 scalaVersion ["2.12.2"]:   # yourScalaVersion
-organization [com.isuwang]: # your project GroupId
+organization [com.github.dapeng]: # your project GroupId
 resources [resources]:      # defaultValue, no need to modify
 api [HelloWorld-api]:           # defaultTemplateValue, no need to modify
 service [HelloWorld-service]:  # defaultTemplateValue, no need to modify
 java [java]:                    # defaultTemplateValue, no need to modify
 scala [scala]:                  # defaultTemplateValue, no need to modify
 docker [docker]:
-servicePackage [com.isuwang.soa]: # default root package modify
+servicePackage [com.github.dapeng.soa]: # default root package modify
 
 Template applied in ./helloworld
 ```
@@ -134,33 +134,33 @@ yourIp:3306->3306/tcp          mysql
 ```java
 <dependencies>
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>hello-api_2.12</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>dapeng-remoting-api</artifactId>
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>dapeng-core</artifactId>
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>dapeng-remoting-netty</artifactId>
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>dapeng-registry-zookeeper</artifactId>
             <version>1.2.1</version>
         </dependency>
 
         <dependency>
-            <groupId>com.isuwang</groupId>
+            <groupId>com.github.dapeng</groupId>
             <artifactId>dapeng-spring</artifactId>
             <version>1.2.1</version>
             <exclusions>
