@@ -1,7 +1,7 @@
-package com.github.dapeng.soa.scala.hello
+package com.github.dapeng.scala.hello
 
-import com.github.dapeng.soa.hello.scala.domain.Hello
-import com.github.dapeng.soa.hello.scala.service.HelloServiceAsync
+import com.github.dapeng.hello.scala.domain.Hello
+import com.github.dapeng.hello.scala.service.HelloServiceAsync
 import scala.concurrent.ExecutionContext.Implicits.global
 
 import scala.concurrent.Future

@@ -1,5 +1,5 @@
-package com.github.dapeng.soa.hello;
-        import com.github.dapeng.soa.hello.domain.serializer.*;
+package com.github.dapeng.hello;
+        import com.github.dapeng.hello.domain.serializer.*;
 
         import com.github.dapeng.core.*;
         import com.github.dapeng.org.apache.thrift.*;
@@ -26,11 +26,11 @@ package com.github.dapeng.soa.hello;
         
             public static class sayHello_args {
             
-                private com.github.dapeng.soa.hello.domain.Hello hello;
-                public com.github.dapeng.soa.hello.domain.Hello getHello(){
+                private com.github.dapeng.hello.domain.Hello hello;
+                public com.github.dapeng.hello.domain.Hello getHello(){
                 return this.hello;
               }
-                public void setHello(com.github.dapeng.soa.hello.domain.Hello hello){
+                public void setHello(com.github.dapeng.hello.domain.Hello hello){
                 this.hello = hello;
               }
               
@@ -95,8 +95,8 @@ package com.github.dapeng.soa.hello;
           
               case 1:
               if(schemeField.type == com.github.dapeng.org.apache.thrift.protocol.TType.STRUCT){
-              com.github.dapeng.soa.hello.domain.Hello elem0 = new com.github.dapeng.soa.hello.domain.Hello();
-        elem0=new com.github.dapeng.soa.hello.domain.serializer.HelloSerializer().read(iprot);
+              com.github.dapeng.hello.domain.Hello elem0 = new com.github.dapeng.hello.domain.Hello();
+        elem0=new com.github.dapeng.hello.domain.serializer.HelloSerializer().read(iprot);
        bean.setHello(elem0);
             }else{
               com.github.dapeng.org.apache.thrift.protocol.TProtocolUtil.skip(iprot, schemeField.type);
@@ -124,8 +124,8 @@ package com.github.dapeng.soa.hello;
 
       
             oprot.writeFieldBegin(new com.github.dapeng.org.apache.thrift.protocol.TField("hello", com.github.dapeng.org.apache.thrift.protocol.TType.STRUCT, (short) 1));
-            com.github.dapeng.soa.hello.domain.Hello elem0 = bean.getHello();
-             new com.github.dapeng.soa.hello.domain.serializer.HelloSerializer().write(elem0, oprot);
+            com.github.dapeng.hello.domain.Hello elem0 = bean.getHello();
+             new com.github.dapeng.hello.domain.serializer.HelloSerializer().write(elem0, oprot);
             
             oprot.writeFieldEnd();
           
@@ -139,7 +139,7 @@ package com.github.dapeng.soa.hello;
               throw new SoaException(SoaBaseCode.NotNull, "hello字段不允许为空");
             
                 if(bean.getHello() != null)
-                new com.github.dapeng.soa.hello.domain.serializer.HelloSerializer().validate(bean.getHello());
+                new com.github.dapeng.hello.domain.serializer.HelloSerializer().validate(bean.getHello());
               
     }
     
@@ -217,7 +217,7 @@ package com.github.dapeng.soa.hello;
             public String toString(sayHello_result bean) { return bean == null ? "null" : bean.toString(); }
           }
 
-            public static class sayHello<I extends com.github.dapeng.soa.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, sayHello_args, sayHello_result>
+            public static class sayHello<I extends com.github.dapeng.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, sayHello_args, sayHello_result>
             {
               public sayHello()
               {
@@ -406,7 +406,7 @@ package com.github.dapeng.soa.hello;
             public String toString(test_result bean) { return bean == null ? "null" : bean.toString(); }
           }
 
-            public static class test<I extends com.github.dapeng.soa.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, test_args, test_result>
+            public static class test<I extends com.github.dapeng.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, test_args, test_result>
             {
               public test()
               {
@@ -571,7 +571,7 @@ package com.github.dapeng.soa.hello;
           }
         }
 
-        public static class getServiceMetadata<I extends com.github.dapeng.soa.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, getServiceMetadata_args, getServiceMetadata_result> {
+        public static class getServiceMetadata<I extends com.github.dapeng.hello.service.HelloService> extends SoaFunctionDefinition.Sync<I, getServiceMetadata_args, getServiceMetadata_result> {
           public getServiceMetadata() {
             super("getServiceMetadata", new GetServiceMetadata_argsSerializer(), new GetServiceMetadata_resultSerializer());
           }
@@ -580,7 +580,7 @@ package com.github.dapeng.soa.hello;
           public getServiceMetadata_result apply(I iface, getServiceMetadata_args args) {
             getServiceMetadata_result result = new getServiceMetadata_result();
 
-            try (InputStreamReader isr = new InputStreamReader(HelloServiceCodec.class.getClassLoader().getResourceAsStream("com.github.dapeng.soa.hello.service.HelloService.xml"));
+            try (InputStreamReader isr = new InputStreamReader(HelloServiceCodec.class.getClassLoader().getResourceAsStream("com.github.dapeng.hello.service.HelloService.xml"));
             BufferedReader in = new BufferedReader(isr)) {
               int len = 0;
               StringBuilder str = new StringBuilder("");
@@ -607,16 +607,16 @@ package com.github.dapeng.soa.hello;
         }
 
         @SuppressWarnings("unchecked")
-        public static class Processor<I extends com.github.dapeng.soa.hello.service.HelloService> extends SoaServiceDefinition<com.github.dapeng.soa.hello.service.HelloService>
+        public static class Processor<I extends com.github.dapeng.hello.service.HelloService> extends SoaServiceDefinition<com.github.dapeng.hello.service.HelloService>
         {
 
-          public Processor(com.github.dapeng.soa.hello.service.HelloService iface, Class<com.github.dapeng.soa.hello.service.HelloService> ifaceClass)
+          public Processor(com.github.dapeng.hello.service.HelloService iface, Class<com.github.dapeng.hello.service.HelloService> ifaceClass)
           {
             super(iface, ifaceClass, buildMap(new java.util.HashMap<>()));
           }
 
           @SuppressWarnings("unchecked")
-          private static <I extends com.github.dapeng.soa.hello.service.HelloService> java.util.Map<String, SoaFunctionDefinition<I, ?, ?>> buildMap(java.util.Map<String, SoaFunctionDefinition<I, ?, ?>> processMap)
+          private static <I extends com.github.dapeng.hello.service.HelloService> java.util.Map<String, SoaFunctionDefinition<I, ?, ?>> buildMap(java.util.Map<String, SoaFunctionDefinition<I, ?, ?>> processMap)
           {
             
                 processMap.put("sayHello", new sayHello());

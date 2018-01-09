@@ -1,5 +1,5 @@
 
-        package com.github.dapeng.soa.hello.scala.service
+        package com.github.dapeng.hello.scala.service
 
         import com.github.dapeng.core.{Processor, Service}
         import com.github.dapeng.core.SoaGlobalTransactional
@@ -16,8 +16,8 @@
  Hello Service
 
         **/
-        @Service(name ="com.github.dapeng.soa.hello.service.HelloService" , version = "1.0.0")
-        @Processor(className = "com.github.dapeng.soa.hello.scala.HelloServiceAsyncCodec\$Processor")
+        @Service(name ="com.github.dapeng.hello.service.HelloService" , version = "1.0.0")
+        @Processor(className = "com.github.dapeng.hello.scala.HelloServiceAsyncCodec\$Processor")
         trait HelloServiceAsync {
         
             /**
@@ -26,6 +26,6 @@
             
             @throws[com.github.dapeng.core.SoaException]
             def sayHello(
-            hello: com.github.dapeng.soa.hello.scala.domain.Hello , timeout : Long): Future[String]
+            hello: com.github.dapeng.hello.scala.domain.Hello , timeout : Long): Future[String]
       }
       

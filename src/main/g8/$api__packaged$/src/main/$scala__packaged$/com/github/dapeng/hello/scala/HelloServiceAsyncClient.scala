@@ -1,11 +1,11 @@
-package com.github.dapeng.soa.hello.scala
+package com.github.dapeng.hello.scala
 
         import com.github.dapeng.core._;
         import com.github.dapeng.org.apache.thrift._;
         import java.util.ServiceLoader;
         import java.util.concurrent.CompletableFuture;
-        import com.github.dapeng.soa.hello.scala.HelloServiceAsyncCodec._;
-        import com.github.dapeng.soa.hello.scala.service.HelloServiceAsync;
+        import com.github.dapeng.hello.scala.HelloServiceAsyncCodec._;
+        import com.github.dapeng.hello.scala.service.HelloServiceAsync;
         import scala.compat.java8.FutureConverters._
         import scala.concurrent.duration._
         import scala.concurrent.Future
@@ -20,7 +20,7 @@ package com.github.dapeng.soa.hello.scala
         **/
         class HelloServiceAsyncClient extends HelloServiceAsync {
 
-        val serviceName = "com.github.dapeng.soa.hello.scala.service.HelloService"
+        val serviceName = "com.github.dapeng.hello.scala.service.HelloService"
         val version = "1.0.0"
         val pool = {
           val serviceLoader = ServiceLoader.load(classOf[SoaConnectionPoolFactory])
@@ -48,7 +48,7 @@ package com.github.dapeng.soa.hello.scala
             /**
             * 
             **/
-            def sayHello(hello:com.github.dapeng.soa.hello.scala.domain.Hello
+            def sayHello(hello:com.github.dapeng.hello.scala.domain.Hello
             , timeout: Long = 5000) : Future[String] = {
 
             val response = pool.sendAsync(

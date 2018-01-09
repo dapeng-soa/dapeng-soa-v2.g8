@@ -1,8 +1,8 @@
-package com.github.dapeng.soa.hello;
+package com.github.dapeng.hello;
 
 import com.github.dapeng.core.SoaException;
-import com.github.dapeng.soa.hello.domain.Hello;
-import com.github.dapeng.soa.hello.service.HelloService;
+import com.github.dapeng.hello.domain.Hello;
+import com.github.dapeng.hello.service.HelloService;
 
 public class HelloServiceImpl implements HelloService{
     @Override

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<service namespace="com.github.dapeng.soa.hello.service" name="HelloService">
+<service namespace="com.github.dapeng.hello.service" name="HelloService">
     <doc>
 
  Hello Service
@@ -15,7 +15,7 @@
                     <field tag="1" name="hello" optional="false" privacy="false">
                         <dataType>
                             <kind>STRUCT</kind>
-                            <ref>com.github.dapeng.soa.hello.domain.Hello</ref>
+                            <ref>com.github.dapeng.hello.domain.Hello</ref>
                         </dataType>
                         <doc></doc>
                     </field>
@@ -35,7 +35,7 @@
         </method>
     </methods>
     <structs>
-        <struct namespace="com.github.dapeng.soa.hello.domain" name="Hello">
+        <struct namespace="com.github.dapeng.hello.domain" name="Hello">
             <fields>
                 <field tag="1" name="name" optional="false" privacy="false">
                     <dataType>

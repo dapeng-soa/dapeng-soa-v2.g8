@@ -1,5 +1,5 @@
- package com.github.dapeng.soa.hello.domain.serializer;
-        import com.github.dapeng.soa.hello.domain.serializer.*;
+ package com.github.dapeng.hello.domain.serializer;
+        import com.github.dapeng.hello.domain.serializer.*;
 
         import com.github.dapeng.core.*;
         import com.github.dapeng.org.apache.thrift.*;
@@ -15,12 +15,12 @@
         * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
         *  @generated
         **/
-        public class HelloSerializer implements BeanSerializer<com.github.dapeng.soa.hello.domain.Hello>{
+        public class HelloSerializer implements BeanSerializer<com.github.dapeng.hello.domain.Hello>{
         
       @Override
-      public com.github.dapeng.soa.hello.domain.Hello read(TProtocol iprot) throws TException{
+      public com.github.dapeng.hello.domain.Hello read(TProtocol iprot) throws TException{
 
-      com.github.dapeng.soa.hello.domain.Hello bean = new com.github.dapeng.soa.hello.domain.Hello();
+      com.github.dapeng.hello.domain.Hello bean = new com.github.dapeng.hello.domain.Hello();
       com.github.dapeng.org.apache.thrift.protocol.TField schemeField;
       iprot.readStructBegin();
 
@@ -62,7 +62,7 @@
     }
     
       @Override
-      public void write(com.github.dapeng.soa.hello.domain.Hello bean, TProtocol oprot) throws TException{
+      public void write(com.github.dapeng.hello.domain.Hello bean, TProtocol oprot) throws TException{
 
       validate(bean);
       oprot.writeStructBegin(new com.github.dapeng.org.apache.thrift.protocol.TStruct("Hello"));
@@ -84,7 +84,7 @@
       oprot.writeStructEnd();
     }
     
-      public void validate(com.github.dapeng.soa.hello.domain.Hello bean) throws TException{
+      public void validate(com.github.dapeng.hello.domain.Hello bean) throws TException{
       
               if(bean.getName() == null)
               throw new SoaException(SoaBaseCode.NotNull, "name字段不允许为空");
@@ -92,7 +92,7 @@
     }
     
         @Override
-        public String toString(com.github.dapeng.soa.hello.domain.Hello bean)
+        public String toString(com.github.dapeng.hello.domain.Hello bean)
         {return bean == null ? "null" : bean.toString();}
       }
       

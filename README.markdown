@@ -55,7 +55,7 @@ service [HelloWorld-service]:  # defaultTemplateValue, no need to modify
 java [java]:                    # defaultTemplateValue, no need to modify
 scala [scala]:                  # defaultTemplateValue, no need to modify
 docker [docker]:
-servicePackage [com.github.dapeng.soa]: # default root package modify
+servicePackage [com.github.dapeng]: # default root package modify
 
 Template applied in ./helloworld
 ```

@@ -1,4 +1,4 @@
-package com.github.dapeng.soa.hello.domain;
+package com.github.dapeng.hello.domain;
 
         import java.util.Optional;
 

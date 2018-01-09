@@ -1,6 +1,6 @@
- package com.github.dapeng.soa.hello.scala.domain.serializer;
+ package com.github.dapeng.hello.scala.domain.serializer;
 
-        import com.github.dapeng.soa.hello.scala.domain.serializer._;
+        import com.github.dapeng.hello.scala.domain.serializer._;
         import com.github.dapeng.core._
         import com.github.dapeng.org.apache.thrift._
         import com.github.dapeng.org.apache.thrift.protocol._
@@ -12,10 +12,10 @@
         *  @generated
         **/
 
-        class HelloSerializer extends BeanSerializer[com.github.dapeng.soa.hello.scala.domain.Hello]{
+        class HelloSerializer extends BeanSerializer[com.github.dapeng.hello.scala.domain.Hello]{
           
       @throws[TException]
-      override def read(iprot: TProtocol): com.github.dapeng.soa.hello.scala.domain.Hello = {
+      override def read(iprot: TProtocol): com.github.dapeng.hello.scala.domain.Hello = {
 
         var schemeField: com.github.dapeng.org.apache.thrift.protocol.TField = null
         iprot.readStructBegin()
@@ -49,14 +49,14 @@
       iprot.readFieldEnd
       iprot.readStructEnd
 
-      val bean = com.github.dapeng.soa.hello.scala.domain.Hello(name = name,message = message)
+      val bean = com.github.dapeng.hello.scala.domain.Hello(name = name,message = message)
       validate(bean)
 
       bean
       }
     
       @throws[TException]
-      override def write(bean: com.github.dapeng.soa.hello.scala.domain.Hello, oprot: TProtocol): Unit = {
+      override def write(bean: com.github.dapeng.hello.scala.domain.Hello, oprot: TProtocol): Unit = {
 
       validate(bean)
       oprot.writeStructBegin(new com.github.dapeng.org.apache.thrift.protocol.TStruct("Hello"))
@@ -81,7 +81,7 @@
     }
     
       @throws[TException]
-      override def validate(bean: com.github.dapeng.soa.hello.scala.domain.Hello): Unit = {
+      override def validate(bean: com.github.dapeng.hello.scala.domain.Hello): Unit = {
       
               if(bean.name == null)
               throw new SoaException(SoaBaseCode.NotNull, "name字段不允许为空")
@@ -90,7 +90,7 @@
     
 
           @throws[TException]
-          override def toString(bean: com.github.dapeng.soa.hello.scala.domain.Hello): String = if (bean == null) "null" else bean.toString
+          override def toString(bean: com.github.dapeng.hello.scala.domain.Hello): String = if (bean == null) "null" else bean.toString
 
         }
         
