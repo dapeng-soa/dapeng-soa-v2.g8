@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<service namespace="com.isuwang.soa.hello.service" name="HelloService">
+<service namespace="com.github.dapeng.soa.hello.service" name="HelloService">
     <doc>
 
  Hello Service
@@ -15,7 +15,7 @@
                     <field tag="1" name="hello" optional="false" privacy="false">
                         <dataType>
                             <kind>STRUCT</kind>
-                            <ref>com.isuwang.soa.hello.domain.Hello</ref>
+                            <ref>com.github.dapeng.soa.hello.domain.Hello</ref>
                         </dataType>
                         <doc></doc>
                     </field>
@@ -33,32 +33,9 @@
             </response>
             <isSoaTransactionProcess>false</isSoaTransactionProcess>
         </method>
-        <method name="test">
-            <request name="test_args">
-                <fields>
-                    <field tag="1" name="content" optional="false" privacy="false">
-                        <dataType>
-                            <kind>STRING</kind>
-                        </dataType>
-                        <doc></doc>
-                    </field>
-                </fields>
-            </request>
-            <response name="test_result">
-                <fields>
-                    <field tag="0" name="success" optional="false" privacy="false">
-                        <dataType>
-                            <kind>VOID</kind>
-                        </dataType>
-                        <doc></doc>
-                    </field>
-                </fields>
-            </response>
-            <isSoaTransactionProcess>false</isSoaTransactionProcess>
-        </method>
     </methods>
     <structs>
-        <struct namespace="com.isuwang.soa.hello.domain" name="Hello">
+        <struct namespace="com.github.dapeng.soa.hello.domain" name="Hello">
             <fields>
                 <field tag="1" name="name" optional="false" privacy="false">
                     <dataType>

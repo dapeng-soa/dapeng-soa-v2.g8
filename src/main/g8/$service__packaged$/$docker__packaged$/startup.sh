@@ -37,6 +37,6 @@ JMX="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=1091 -Dc
 GCOPTS="-Dfile.encoding=UTF-8 -Dsun.jun.encoding=UTF-8 -Dname=$"$"$PRGNAME -Xms512M -Xmx1024M -XX:PermSize=512M -XX:MaxPermSize=512M -XX:+HeapDumpOnOutOfMemoryError -XX:+PrintGCDateStamps -Xloggc:$"$"$LOGDIR/gc-$"$"$PRGNAME-$"$"$ADATE.log -XX:+PrintGCDetails -XX:NewRatio=1 -XX:SurvivorRatio=30 -XX:+UseParallelGC -XX:+UseParallelOldGC -Dlog.dir=$"$"$PRGDIR/.."
 SOA_BASE="-Dsoa.base=$"$"$PRGDIR/../ -Dsoa.run.mode=native"
 
-nohup java $"$"$PINPOINT -server $"$"$GCOPTS $"$"$E_JAVA_OPTS $"$"$SOA_BASE -cp ./dapeng-bootstrap.jar com.isuwang.dapeng.bootstrap.Bootstrap >> $"$"$LOGDIR/catalina.out 2>&1 &
+nohup java $"$"$PINPOINT -server $"$"$GCOPTS $"$"$E_JAVA_OPTS $"$"$SOA_BASE -cp ./dapeng-bootstrap.jar com.github.dapeng.bootstrap.Bootstrap >> $"$"$LOGDIR/catalina.out 2>&1 &
 
 echo $"$"$! > $"$"$LOGDIR/pid.txt
