@@ -53,31 +53,7 @@ package com.github.dapeng.hello;
                     
                 
           }
-          
-        
 
-        
-        
-       /**
-       * 
-       **/
-          
-            public void test(String content) throws SoaException{
-
-              String methodName = "test";
-
-              test_args test_args = new test_args();
-              test_args.setContent(content);
-                
-
-              test_result response = pool.send(serviceName,version,"test",test_args, new Test_argsSerializer(), new Test_resultSerializer());
-
-              
-                  
-                
-          }
-          
-        
 
         
 

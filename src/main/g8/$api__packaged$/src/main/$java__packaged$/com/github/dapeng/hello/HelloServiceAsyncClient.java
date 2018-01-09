@@ -54,32 +54,6 @@ package com.github.dapeng.hello;
                     
                 
             }
-            
-          
-
-        
-          
-            /**
-            * 
-            **/
-            
-              public CompletableFuture<Void> test(String content, long timeout) throws SoaException{
-
-              String methodName = "test";
-              test_args test_args = new test_args();
-              test_args.setContent(content);
-                
-
-              CompletableFuture<test_result> response = (CompletableFuture<test_result>) pool.sendAsync(serviceName,version,"test",test_args, new Test_argsSerializer(), new Test_resultSerializer(),timeout);
-
-              
-                  return response.thenApply((test_result result )->  null);
-                
-            }
-            
-          
-
-        
 
       /**
       * getServiceMetadata

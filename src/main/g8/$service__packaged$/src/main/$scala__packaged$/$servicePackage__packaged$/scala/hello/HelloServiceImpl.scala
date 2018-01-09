@@ -12,6 +12,6 @@ class HelloServiceImpl extends HelloService {
     *
     **/
   override def sayHello(hello: Hello): String = {
-    s" hello: \${hello.content} "
+    s" hello: \${hello.toString} "
   }
 }
