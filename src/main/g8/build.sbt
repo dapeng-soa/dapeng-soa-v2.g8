@@ -5,8 +5,6 @@ version := "$version$"
 
 scalaVersion := "$scalaVersion$"
 
-sbtPlugin := true
-
 organization := "$organization$"
 
 resolvers += Resolver.mavenLocal
@@ -36,7 +34,7 @@ lazy val service = (project in file("$name$-service"))
     name := "$name$_service",
     libraryDependencies ++= Seq(
       "com.github.dapeng" % "dapeng-spring" % "$dapengVersion$",
-      "com.github.wangzaixiang" %% "scala-sql" % "2.0.2",
+      "com.github.wangzaixiang" %% "scala-sql" % "2.0.3",
       "org.slf4j" % "slf4j-api" % "1.7.13",
       "ch.qos.logback" % "logback-classic" % "1.1.3",
       "ch.qos.logback" % "logback-core" % "1.1.3",
