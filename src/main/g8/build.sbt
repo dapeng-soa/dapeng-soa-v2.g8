@@ -20,9 +20,7 @@ lazy val api = (project in file("$name$-api"))
     commonSettings,
     name := "$name$-api",
     libraryDependencies ++= Seq(
-      "com.github.dapeng" % "dapeng-core" % "$dapengVersion$",
-      "com.github.dapeng" % "dapeng-client-netty" % "$dapengVersion$",
-      "org.scala-lang.modules" %% "scala-java8-compat" % "0.8.0"
+      "com.github.dapeng" % "dapeng-client-netty" % "$dapengVersion$"
     )
   ).enablePlugins(ThriftGeneratorPlugin)
 
@@ -44,7 +42,6 @@ lazy val service = (project in file("$name$-service"))
       "org.springframework" % "spring-context" % "4.3.5.RELEASE",
       "org.springframework" % "spring-tx" % "4.3.5.RELEASE",
       "org.springframework" % "spring-jdbc" % "4.3.5.RELEASE",
-      "com.github.dapeng" % "dapeng-registry-zookeeper" % "$dapengVersion$",
       "com.github.dapeng" % "dapeng-client-netty" % "$dapengVersion$"
     )).enablePlugins(ImageGeneratorPlugin)
     .enablePlugins(DbGeneratorPlugin)
