@@ -1,12 +1,6 @@
 
 name := "$name$"
 
-version := "$version$"
-
-scalaVersion := "$scalaVersion$"
-
-organization := "$organization$"
-
 resolvers += Resolver.mavenLocal
 
 lazy val commonSettings = Seq(
@@ -14,6 +8,8 @@ lazy val commonSettings = Seq(
   version := "$version$",
   scalaVersion := "$scalaVersion$"
 )
+
+javacOptions ++= Seq("-encoding", "UTF-8")
 
 lazy val api = (project in file("$name$-api"))
   .settings(
