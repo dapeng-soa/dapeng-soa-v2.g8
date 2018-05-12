@@ -40,5 +40,5 @@ lazy val service = (project in file("$name$-service"))
       "org.springframework" % "spring-jdbc" % "4.3.5.RELEASE",
       "com.github.dapeng" % "dapeng-client-netty" % "$dapengVersion$"
     )).enablePlugins(ImageGeneratorPlugin)
-    .enablePlugins(DbGeneratorPlugin)
+    .enablePlugins(DbGeneratePlugin)
   .enablePlugins(RunContainerPlugin)
