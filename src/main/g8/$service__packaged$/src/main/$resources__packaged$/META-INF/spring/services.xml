@@ -14,8 +14,9 @@
     <context:property-placeholder location="classpath:config_$name$.properties" local-override="false"
                                   system-properties-mode="ENVIRONMENT"/>
 
-    <context:component-scan base-package="com.github.dapeng"/>
+    <context:component-scan base-package="$servicePackage$"/>
 
-    <bean id="helloScalaService" class="com.github.dapeng.scala.hello.HelloServiceImpl"/>
-    <soa:service ref="helloScalaService"/>
+    <!-- dapeng framework service bean config template -->
+    <!--<bean id="helloScalaService" class="$servicePackage$.scala.hello.HelloServiceImpl"/>
+    <soa:service ref="helloScalaService"/>-->
 </beans>
