@@ -34,7 +34,7 @@ lazy val service = (project in file("$name$-service"))
       "ch.qos.logback" % "logback-core" % "1.1.3",
       "org.codehaus.janino" % "janino" % "2.7.8", //logback (use if condition in logBack config file need this dependency)
       "mysql" % "mysql-connector-java" % "5.1.36",
-      "com.alibaba" % "druid" % "1.0.17",
+      "com.alibaba" % "druid" % "1.1.9",
       "org.springframework" % "spring-context" % "4.3.5.RELEASE",
       "org.springframework" % "spring-tx" % "4.3.5.RELEASE",
       "org.springframework" % "spring-jdbc" % "4.3.5.RELEASE",
