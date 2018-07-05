@@ -58,5 +58,6 @@
         </if>
         <appender-ref ref="DETAILFILE"/>
     </root>
+    <contextName>service</contextName>
     <jmxConfigurator />
 </configuration>
