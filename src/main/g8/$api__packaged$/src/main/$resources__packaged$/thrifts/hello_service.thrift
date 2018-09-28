@@ -1,4 +1,4 @@
-namespace java $organization$.hello.service
+namespace java $servicePackage$.hello.service
 
 include "hello_domain.thrift"
 

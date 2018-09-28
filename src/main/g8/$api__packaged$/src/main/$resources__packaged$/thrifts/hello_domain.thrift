@@ -1,4 +1,4 @@
-namespace java $organization$.hello.domain
+namespace java $servicePackage$.hello.domain
 
 struct Hello {
     1: string name,
