@@ -1,1 +1,1 @@
-addSbtPlugin("com.github.dapeng" % "sbt-dapeng" % "$dapengVersion$")
+addSbtPlugin("com.github.dapeng-soa" % "sbt-dapeng" % "2.1.0")

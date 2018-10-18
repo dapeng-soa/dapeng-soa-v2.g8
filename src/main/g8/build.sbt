@@ -37,8 +37,7 @@ lazy val service = (project in file("$name$-service"))
       "com.alibaba" % "druid" % "1.1.9",
       "org.springframework" % "spring-context" % "4.3.5.RELEASE",
       "org.springframework" % "spring-tx" % "4.3.5.RELEASE",
-      "org.springframework" % "spring-jdbc" % "4.3.5.RELEASE",
-      "com.github.dapeng-soa" % "dapeng-client-netty" % "$dapengVersion$"
+      "org.springframework" % "spring-jdbc" % "4.3.5.RELEASE"
     )).enablePlugins(ImageGeneratorPlugin)
     .enablePlugins(DbGeneratePlugin)
   .enablePlugins(RunContainerPlugin)
