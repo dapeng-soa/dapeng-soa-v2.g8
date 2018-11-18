@@ -17,6 +17,6 @@
     <context:component-scan base-package="$servicePackage$"/>
 
     <!-- dapeng framework service bean config template -->
-    <!--<bean id="helloScalaService" class="$servicePackage$.scala.hello.HelloServiceImpl"/>
-    <soa:service ref="helloScalaService"/>-->
+    <bean id="helloScalaService" class="com.github.dapeng.hello.HelloServiceImpl"/>
+    <soa:service ref="helloScalaService"/>
 </beans>
